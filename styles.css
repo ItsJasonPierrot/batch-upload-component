@@ -1,0 +1,68 @@
+:root {
+      --gray-1: #f4f4f5;
+      --gray-2: #e4e4e7;
+      --gray-3: #d1d5db;
+      --primary: #3b82f680;
+    }
+ 
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #fff;
+    }
+ 
+    .upload-container {
+      border: 2px solid var(--gray-3);
+      background-color: var(--gray-1);
+      padding: 1rem;
+      text-align: center;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      position: relative;
+    }
+ 
+    .upload-container:hover {
+      background-color: var(--gray-2);
+    }
+ 
+    .upload-container.dragover,
+    .upload-container.dragging {
+      border-color: var(--primary);
+    }
+ 
+    .upload-label {
+      font-size: 1.2rem;
+    }
+ 
+    .upload-browse {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+ 
+    .upload-input {
+      display: none;
+    }
+ 
+    .file-tree {
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--gray-1);
+      max-height: 16rem;
+      overflow-x: hidden;
+    }
+ 
+    .file-tree-items {
+      overflow-y: scroll;
+      max-height: 14rem;
+    }
+ 
+    .folder {
+      cursor: pointer;
+      font-weight: bold;
+    }
+ 
+    .file-item {
+      margin-bottom: 0.5rem;
+    }

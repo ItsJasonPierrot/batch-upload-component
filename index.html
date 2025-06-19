@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PDF Drag & Drop Upload</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<div class="upload-container" id="dropZone">
+<label for="folderInput" class="upload-label">
+    Drag & Drop folders here or <span class="upload-browse">browse</span>
+</label>
+<input type="file" id="folderInput" webkitdirectory multiple class="upload-input" />
+</div>
+ 
+<div class="file-tree" id="fileTree">
+<!-- Files will be listed here -->
+</div>
+ 
+<script src="scripts.js"></script>
+ 
+</body>
+</html>
